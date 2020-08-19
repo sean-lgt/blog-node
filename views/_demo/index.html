@@ -1,0 +1,23 @@
+<!-- 直接引进模板页面 -->
+{{extend './layout.html'}}
+
+<!-- 填坑位置  先是头部的样式 -->
+{{block 'head'}}
+<style>
+    body {
+        background-color: aqua;
+    }
+</style>
+{{/block}}
+
+<!-- 填坑位置  中间部分内容 -->
+{{block 'content'}}
+<h1>首页</h1>
+{{/block}}
+
+<!-- 填坑位置  写js -->
+{{block 'Javascript'}}
+<script>
+    window.alert("aaaa")
+</script>
+{{/block}}
